@@ -6,7 +6,7 @@
     box-shadow: 0px 1px 3px 2px #243240;
 }
 .nav-link{
-    color: white !important;
+    color: white;
 }
 
 .navbar-brand {
@@ -42,9 +42,7 @@
     cursor: pointer;
 }
 
-.navbar-nav .nav-link.active{
-    color:  var(--bs-orange) !important;
-}
+
 
 .nav-link:hover{
     color:  var(--bs-orange) !important;

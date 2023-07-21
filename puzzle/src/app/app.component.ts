@@ -6,18 +6,22 @@ import { ActivatedRoute, NavigationStart,NavigationEnd, Router } from '@angular/
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements  DoCheck {
+export class AppComponent implements OnInit {
   public isGame: boolean = false;
+  public loader: boolean = true;
   constructor(private route: ActivatedRoute, private router: Router) {
 
   }
-  ngDoCheck(): void {
-    this.checkRoute();  
+  ngOnInit(): void {
+    this.checkRoute();
+    this.loaderNone();  
   }
 
   checkRoute(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+          this.loader = true;
+          this.loaderNone();
           // @ts-ignore
           if (this.route._routerState.snapshot.url === '/games') {
             this.isGame = true;
@@ -27,7 +31,12 @@ export class AppComponent implements  DoCheck {
           }
       }
     });
+  }
 
+  loaderNone(): void {
+    setTimeout(() => {
+      this.loader = false;
+    }, 800);
   }
 
 }
