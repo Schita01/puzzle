@@ -8,7 +8,8 @@ import { loaderComponent } from './loader/loader.component';
 import { AbonimentsModule } from './modules/aboniments/aboniments.module';
 import { AboutUsModule } from './modules/about-us/about-us.module';
 import { GamesModule } from './modules/games/games.module';
-
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,8 @@ import { GamesModule } from './modules/games/games.module';
     AbonimentsModule,
     AboutUsModule,
     GamesModule,
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
