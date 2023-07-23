@@ -15,7 +15,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes), 
     CommonModule,
-    CarouselModule
+    CarouselModule,
   ],
   providers: [],
 })
