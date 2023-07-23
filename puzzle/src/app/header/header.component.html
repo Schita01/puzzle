@@ -1,7 +1,7 @@
 <ng-container *ngIf="!isGame">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand responsive-logo" href="#"
+      <a class="navbar-brand responsive-logo" href="" routerLink="main"
         ><img id="navbar-logo" src="../../assets/img/909.jpg" alt=""
       /></a>
       <button
@@ -55,10 +55,10 @@
 <ng-container *ngIf="isGame">
   <nav
     class="navbar navbar-expand-lg"
-    style="background-color: rgb(42, 58, 74, 0) !important"
+    style="background-color: rgb(42, 58, 74, 0) !important;position: absolute;width: 100%;box-shadow: none;z-index: 999;padding-top: 62px !important;"
   >
     <div class="container-fluid">
-      <a class="navbar-brand responsive-logo" href="#"
+      <a class="navbar-brand responsive-logo" href="" routerLink="main"
         ><img id="navbar-logo" src="../../assets/img/logo-another.svg" alt="" />
       </a>
       <button

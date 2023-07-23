@@ -1,1 +1,30 @@
-<p>games works!</p>
+<div class="games-main">
+    <div class="games-background">
+        <div class="popular-games-div">
+            <span class="popular-games-text">პოპულარული თამაშები</span>
+            <p class="popular-games-border"></p>
+        </div>
+        <div class="games-gradient"></div>
+        <owl-carousel-o class="games-carousel" [options]="customOptions">
+            <ng-container class="games-carousel-container" *ngFor="let slide of slidesStore">
+                <ng-template carouselSlide [id]="slide.id">
+                    <div class="carousel-content">
+                        <img class="carousel-img" [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                        <h3>{{slide.title}}</h3>
+                        <span class="games-description">{{slide.description}}</span>
+                      </div>
+                </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+    </div>
+
+    <div class="new-games-div">
+        <span class="new-games-text">ახალი თამაშები</span>
+        <p class="new-games-border"></p>
+      </div>
+
+      <div class="all-games-div">
+        <span class="all-games-text">ყველა თამაში</span>
+        <p class="all-games-border"></p>
+      </div>
+</div>

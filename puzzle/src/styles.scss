@@ -1,5 +1,6 @@
 @import url('../src//assets/_pallete.scss');
-
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 
 *{
@@ -49,9 +50,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: #f8f8f8;
-
-
+    background-color: rgb(255,255,255);
 }
 
 
