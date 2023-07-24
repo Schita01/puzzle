@@ -66,12 +66,12 @@
         <div class="pic" *ngFor="let slide of slidesStore; let index = index">
           <ng-container *ngIf="chosenIndex === index">
             <img data-aos="fade-left" [src]="slide.src" alt="" />
-            <h3>title</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ducimus!</span>
+            <h3 class="all-games-slider-title" data-aos="fade-left">{{slide.title}}</h3>
+            <span class="all-games-slider-description" data-aos="fade-left">{{slide.description }}</span>
           </ng-container>
         </div>
         <ng-container *ngIf="chosenIndex === -1">
-          დააჭირეთ სათაურს
+          <p class="all-games-text-second">დააჭირეთ სათაურს</p>
         </ng-container>
       </div>
     </div>
