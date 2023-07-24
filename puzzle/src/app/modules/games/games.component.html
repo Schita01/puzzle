@@ -26,7 +26,7 @@
     </owl-carousel-o>
   </div>
 
-  <div class="new-games-div">
+  <!-- <div class="new-games-div">
     <span class="new-games-text">ახალი თამაშები</span>
     <p class="new-games-border"></p>
     <owl-carousel-o class="games-carousel" [options]="customOptions">
@@ -48,12 +48,12 @@
         </ng-template>
       </ng-container>
     </owl-carousel-o>
-  </div>
+  </div> -->
   <div class="all-games-div">
     <span class="all-games-text">ყველა თამაში</span>
     <p class="all-games-border"></p>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4 all-games-left">
         <div
           class="title"
           *ngFor="let slide of slidesStore; let index = index"
@@ -62,10 +62,12 @@
           {{ slide.title }}
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 all-games-right">
         <div class="pic" *ngFor="let slide of slidesStore; let index = index">
           <ng-container *ngIf="chosenIndex === index">
             <img data-aos="fade-left" [src]="slide.src" alt="" />
+            <h3>title</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ducimus!</span>
           </ng-container>
         </div>
         <ng-container *ngIf="chosenIndex === -1">

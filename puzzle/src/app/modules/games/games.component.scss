@@ -111,7 +111,40 @@
 .all-games-div {
     right: 0px;
     img {
-        height: 100px;
+        height: 290px;
+    }
+
+
+    .all-games-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: "roboto mt", Sans-serif;
+        gap: 25px;
+    }
+
+    .title {
+        color: rgb(75, 75, 75);
+        cursor: pointer;
+        transition: all 0.4s;
+        font-weight: 500;
+    }
+    
+    .title:hover {
+        border-bottom: 1px solid rgb(206, 183, 29);
+        color: black;
+    }
+
+    .all-games-right {
+        display: flex;
+        justify-content: start;
+    }
+  
+    .pic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
 }
