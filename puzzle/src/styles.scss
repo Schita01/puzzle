@@ -294,4 +294,10 @@ html{
       margin-left: 0px;
     }
   }
-  
+  .owl-theme {
+    z-index: 0;
+  }
+
+.owl-carousel .owl-item img {
+  height: 140px;
+}

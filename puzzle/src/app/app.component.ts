@@ -1,5 +1,6 @@
 import { Component, DoCheck, OnChanges, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationStart,NavigationEnd, Router } from '@angular/router';
+import * as AOS from 'aos'
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ export class AppComponent implements OnInit {
   }
   ngOnInit(): void {
     this.checkRoute();
-    this.loaderNone();  
+    this.loaderNone(); 
+    AOS.init();
   }
 
   checkRoute(): void {
