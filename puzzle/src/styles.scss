@@ -40,7 +40,7 @@ a{
     --bs-dark: #212529;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); 
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 
 
 html{
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
     min-height: 100vh;
 }
 
@@ -66,7 +66,7 @@ html{
     width: 112px;
     height: 112px;
   }
-  
+
   .box1,
   .box2,
   .box3 {
@@ -75,7 +75,7 @@ html{
     position: absolute;
     display: block;
   }
-  
+
   .box1 {
     width: 112px;
     height: 48px;
@@ -83,7 +83,7 @@ html{
     margin-left: 0px;
     animation: abox1 1s .3s forwards ease-in-out infinite;
   }
-  
+
   .box2 {
     width: 48px;
     height: 48px;
@@ -91,7 +91,7 @@ html{
     margin-left: 0px;
     animation: abox2 1s .3s forwards ease-in-out infinite;
   }
-  
+
   .box3 {
     width: 48px;
     height: 48px;
@@ -99,7 +99,7 @@ html{
     margin-left: 64px;
     animation: abox3 1s 0.3s forwards ease-in-out infinite;
   }
-  
+
   @keyframes abox1 {
     0% {
       width: 112px;
@@ -107,56 +107,56 @@ html{
       margin-top: 64px;
       margin-left: 0px;
     }
-  
+
     12.5% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 0px;
     }
-  
+
     25% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 0px;
     }
-  
+
     37.5% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 0px;
     }
-  
+
     50% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 0px;
     }
-  
+
     62.5% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 0px;
     }
-  
+
     75% {
       width: 48px;
       height: 112px;
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     87.5% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     100% {
       width: 48px;
       height: 48px;
@@ -164,7 +164,7 @@ html{
       margin-left: 0px;
     }
   }
-  
+
   @keyframes abox2 {
     0% {
       width: 48px;
@@ -172,56 +172,56 @@ html{
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     12.5% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     25% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     37.5% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     50% {
       width: 112px;
       height: 48px;
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     62.5% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 64px;
     }
-  
+
     75% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 64px;
     }
-  
+
     87.5% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 64px;
     }
-  
+
     100% {
       width: 48px;
       height: 48px;
@@ -229,7 +229,7 @@ html{
       margin-left: 64px;
     }
   }
-  
+
   @keyframes abox3 {
     0% {
       width: 48px;
@@ -237,56 +237,56 @@ html{
       margin-top: 0px;
       margin-left: 64px;
     }
-  
+
     12.5% {
       width: 48px;
       height: 48px;
       margin-top: 0px;
       margin-left: 64px;
     }
-  
+
     25% {
       width: 48px;
       height: 112px;
       margin-top: 0px;
       margin-left: 64px;
     }
-  
+
     37.5% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 64px;
     }
-  
+
     50% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 64px;
     }
-  
+
     62.5% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 64px;
     }
-  
+
     75% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 64px;
     }
-  
+
     87.5% {
       width: 48px;
       height: 48px;
       margin-top: 64px;
       margin-left: 64px;
     }
-  
+
     100% {
       width: 112px;
       height: 48px;
@@ -302,4 +302,16 @@ html{
   height: 180px;
   width: 150px;
   margin-top: -10px;
+  margin-left: -2px;
 }
+.carousel-content {
+  transition: 0.5s;
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    h3 {
+      color: #ff0033 !important;
+    }
+  }
+}
+
