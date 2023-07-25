@@ -1,12 +1,11 @@
 import { Component, DoCheck, OnChanges, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationStart,NavigationEnd, Router } from '@angular/router';
 import * as AOS from 'aos'
-// alika debilia
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-})
+}) 
 export class AppComponent implements OnInit {
   public isGame: boolean = false;
   public loader: boolean = true;
