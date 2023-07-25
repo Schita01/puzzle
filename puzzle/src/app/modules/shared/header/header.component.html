@@ -54,13 +54,16 @@
 </ng-container>
 <ng-container *ngIf="isGame">
   <nav
-    class="navbar navbar-expand-lg"
+    class="navbar navbar-expand-xxl navbar-second"
     style="background-color: rgb(42, 58, 74, 0) !important;position: absolute;width: 100%;box-shadow: none;z-index: 999;padding-top: 62px !important;"
   >
     <div class="container-fluid">
       <a class="navbar-brand responsive-logo" href="" routerLink="main"
         ><img id="navbar-logo" src="../../assets/img/logo-another.svg" alt="" />
       </a>
+      <h3 class="navbar-second-text-second" style="color: white; width: 400px; display: none;">
+        სამოცდაათზე მეტი სამაგიდო თამაში
+      </h3>
       <button
         class="navbar-toggler"
         type="button"
@@ -77,7 +80,7 @@
           <a class="navbar-brand logo" routerLink="main"
             ><img id="logo" src="../../assets/img/logo-another.svg" alt=""
           /></a>
-          <h3 style="color: white; width: 400px">
+          <h3 class="navbar-second-text" style="color: white; width: 400px">
             სამოცდაათზე მეტი სამაგიდო თამაში
           </h3>
           <li class="nav-item">

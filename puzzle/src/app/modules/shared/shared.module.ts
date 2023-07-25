@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/foooter.component';
-import { HeaderComponent } from './header/header.component';
-import { loaderComponent } from './loader/loader.component';
 import { SliderComponent } from './slider/slider.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FooterComponent } from './footer/foooter.component';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { loaderComponent } from './loader/loader.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   ],
   imports: [
     CommonModule,
-    CarouselModule
+    CarouselModule,
+    RouterModule
   ],
   exports: [
     FooterComponent,
