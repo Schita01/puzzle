@@ -6,7 +6,7 @@
 <div class="hero">
 <div class="content-main">
   <app-slider [title]="'პოპულარული თამაშები'" [slidesStore]="slidesStore" [customOptions]="customOptions"></app-slider>
-</div> 
+</div>
 <div class="content-main p-t-0">
   <app-slider [title]="'ახალი თამაშები'" [slidesStore]="slidesStoreSecond" [customOptions]="customOptions"></app-slider>
 </div>
@@ -20,6 +20,7 @@
         class="title"
         *ngFor="let slide of slidesStoreThird; let index = index"
         (click)="choseTitle(index)"
+        [class.active]="defChosen && index === 0 || chosenIndex === index"
       >
         {{ slide.title }}
       </div>
@@ -33,7 +34,13 @@
         </ng-container>
       </div>
       <ng-container *ngIf="chosenIndex === -1">
-        <p class="all-games-text-second">დააჭირეთ სათაურს</p>
+        <div class="pic" *ngFor="let slide of slidesStoreThird; let index = index">
+          <ng-container *ngIf="index === 0">
+            <img data-aos="fade-left" [src]="slide.src" alt="" />
+            <h3 class="all-games-slider-title" data-aos="fade-left">{{slide.title}}</h3>
+            <span class="all-games-slider-description" data-aos="fade-left">{{slide.description }}</span>
+          </ng-container>
+        </div>
       </ng-container>
     </div>
   </div>

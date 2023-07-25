@@ -8,6 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class GamesComponent implements OnInit{
   chosenIndex: number = -1;
+  defChosen: boolean = true;
   ngOnInit(): void {
 
   }
@@ -142,7 +143,7 @@ export class GamesComponent implements OnInit{
 
   choseTitle(index: any) {
     this.chosenIndex = index;
+    this.defChosen = false;
   }
 
 }
-  
