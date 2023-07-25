@@ -1,79 +1,31 @@
 <div class="games-main">
-  <div class="games-background">
-    <div class="popular-games-div">
-      <span class="popular-games-text">პოპულარული თამაშები</span>
-      <p class="popular-games-border"></p>
-    </div>
-    <div class="games-gradient"></div>
-    <owl-carousel-o class="games-carousel" [options]="customOptions">
-      <ng-container
-        class="games-carousel-container"
-        *ngFor="let slide of slidesStore"
-      >
-        <ng-template carouselSlide [id]="slide.id">
-          <div class="carousel-content">
-            <img
-              class="carousel-img"
-              [src]="slide.src"
-              [alt]="slide.alt"
-              [title]="slide.title"
-            />
-            <h3>{{ slide.title }}</h3>
-            <span class="games-description">{{ slide.description }}</span>
-          </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
+<div class="games-background">
+  <div class="games-gradient"></div>
+  <div class="content-main">
+    <app-slider [slidesStore]="slidesStore" [customOptions]="customOptions"></app-slider>
   </div>
-
-  <!-- <div class="new-games-div">
-    <span class="new-games-text">ახალი თამაშები</span>
-    <p class="new-games-border"></p>
-    <owl-carousel-o class="games-carousel" [options]="customOptions">
-      <ng-container
-        class="games-carousel-container"
-        *ngFor="let slide of slidesStoreSecond"
+</div>
+  <div class="row">
+    <div class="col-md-4 all-games-left">
+      <div
+        class="title"
+        *ngFor="let slide of slidesStore; let index = index"
+        (click)="choseTitle(index)"
       >
-        <ng-template carouselSlide [id]="slide.id">
-          <div class="carousel-content">
-            <img
-              class="carousel-img"
-              [src]="slide.src"
-              [alt]="slide.alt"
-              [title]="slide.title"
-            />
-            <h3>{{ slide.title }}</h3>
-            <span class="games-description">{{ slide.description }}</span>
-          </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
-  </div> -->
-  <div class="all-games-div">
-    <span class="all-games-text">ყველა თამაში</span>
-    <p class="all-games-border"></p>
-    <div class="row">
-      <div class="col-md-4 all-games-left">
-        <div
-          class="title"
-          *ngFor="let slide of slidesStore; let index = index"
-          (click)="choseTitle(index)"
-        >
-          {{ slide.title }}
-        </div>
+        {{ slide.title }}
       </div>
-      <div class="col-md-6 all-games-right">
-        <div class="pic" *ngFor="let slide of slidesStore; let index = index">
-          <ng-container *ngIf="chosenIndex === index">
-            <img data-aos="fade-left" [src]="slide.src" alt="" />
-            <h3 class="all-games-slider-title" data-aos="fade-left">{{slide.title}}</h3>
-            <span class="all-games-slider-description" data-aos="fade-left">{{slide.description }}</span>
-          </ng-container>
-        </div>
-        <ng-container *ngIf="chosenIndex === -1">
-          <p class="all-games-text-second">დააჭირეთ სათაურს</p>
+    </div>
+    <div class="col-md-6 all-games-right">
+      <div class="pic" *ngFor="let slide of slidesStore; let index = index">
+        <ng-container *ngIf="chosenIndex === index">
+          <img data-aos="fade-left" [src]="slide.src" alt="" />
+          <h3 class="all-games-slider-title" data-aos="fade-left">{{slide.title}}</h3>
+          <span class="all-games-slider-description" data-aos="fade-left">{{slide.description }}</span>
         </ng-container>
       </div>
+      <ng-container *ngIf="chosenIndex === -1">
+        <p class="all-games-text-second">დააჭირეთ სათაურს</p>
+      </ng-container>
     </div>
   </div>
 </div>
