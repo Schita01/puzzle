@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class SliderComponent {
   @Input() slidesStore: any;
   @Input() customOptions: any;
+  @Input() title: string;
 }
