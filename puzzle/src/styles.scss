@@ -1,5 +1,6 @@
 @import url('../src//assets/_pallete.scss');
-
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 
 *{
@@ -49,9 +50,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: #f8f8f8;
-
-
+    background-color: rgb(255,255,255);
 }
 
 
@@ -295,4 +294,19 @@ html{
       margin-left: 0px;
     }
   }
-  
+  .owl-theme {
+    z-index: 0;
+  }
+
+.owl-carousel .owl-item img {
+  height: 140px;
+  width: 140px;
+}
+// .ng-trigger:hover,:focus{
+//     cursor: pointer;
+//     transform: scale(1.1);
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//   .carousel-img{
+//     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+//   }
+// }
