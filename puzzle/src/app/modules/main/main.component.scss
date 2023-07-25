@@ -92,6 +92,9 @@
         left: 50px !important;
         transition: .5s;
     }
+    #cards-main-title{
+        padding-left: 51px !important;
+    }
 }
 @media only screen and (max-width: 600px) {
 
@@ -129,6 +132,9 @@
         font-size: 15px;
         margin-top: 6px !important;
     }
+    #cards-main-title{
+        padding-left: 30px !important;
+    }
 }
 
 .cards-main {
@@ -148,7 +154,9 @@
     width: 100%;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 97px;
+    transition: all .5s;
 }
 
 #cards-title{
@@ -338,56 +346,6 @@
     -webkit-text-stroke-color: #ffc500;
     text-align: center;
 }
-
-// .footer-main{
-//     width: 100%;
-//     padding: 20px;
-//     background: #243240;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 3rem;
-//     flex-direction: column;
-// }
-// .footer-card-container{
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-around;
-// }
-
-// .footer-bottom-border{
-//     border-bottom: 2px solid white;
-//     width: 92%;
-//     padding-top: 45px;
-//     border-radius: 29px;
-// }
-// .fa:hover{
-//     font-size: 26px;
-//     color: #ffc500;
-// }
-// .footer-txt:hover{
-//     font-size: 19px;
-//     color: #ffc500;
-// }
-// .footer-txt{
-//     color: #ffff;
-//     font-weight: 600;
-//     font-size: 18px;
-//     transition: .4s;
-// }
-// .footer-links:hover .fa{
-//     font-size: 26px;
-//     color: #ffc500;
-// }
-// .footer-location{
-//     width: 345px;
-// }
-// .footer-links{
-//     gap: 11px;
-//     display: flex;
-//     align-items: center;
-// }
-
 .card-copm {
     display: flex;
     flex-direction: column;
@@ -427,3 +385,24 @@
         text-align: center;
     }
  } 
+
+
+//  @media only screen and (max-width: 1550px) {
+
+        
+//     .text{
+//         top: 10% !important;
+//     }
+//     .gold{
+//         font-size: 55px;
+//     }
+// }
+
+// @media only screen and (max-width: 991px) {
+//     .main{
+//         height: calc(101.7vh - 111px);
+//     }
+//     .show-more{
+//         margin-top: 169px !important;
+//     }
+// }
